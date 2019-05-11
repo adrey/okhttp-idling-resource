@@ -10,10 +10,12 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:3.4.0'
+    classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
   }
 }
 
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
 
 dependencies {
   api 'com.squareup.okhttp3:okhttp:3.12.1'
